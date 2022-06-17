@@ -1,0 +1,43 @@
+.main{
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+}
+
+@font-face {
+    font-family: "PTSansNarrow"; /*eg Ubuntu*/
+    src: url('fonts/PTSansNarrow-Regular.ttf');
+}
+
+body{
+    font-family: 'PTSansNarrow'
+}
+#background{
+    background-color: #191919;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#top:after{
+    content: "";
+    position: absolute;
+    top: calc(70% - 0);
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: #212121;
+    transform: skew(340deg);
+    transform-origin: top;
+}
+
+.fs-4r{
+    font-size: 4rem;
+}
+.fs-25r{
+    font-size: 2rem;
+}
