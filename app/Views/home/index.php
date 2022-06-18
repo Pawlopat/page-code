@@ -61,7 +61,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
-                                <img width="200" src="<?= base_url('assets/images/php-icon.png') ?>" />
+                                <img width="200" src="<?= base_url('assets/images/php-icon-dark.png') ?>" />
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="fs-3">PHP 7.4/8.1</h5>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
-                                <img width="200" src="<?= base_url('assets/images/ci-icon.png') ?>" />
+                                <img width="200" src="<?= base_url('assets/images/ci-icon-dark.png') ?>" />
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="fs-3">Codeigniter 4</h5>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
-                                <img width="200" src="<?= base_url('assets/images/vsc-icon.png') ?>" />
+                                <img width="200" src="<?= base_url('assets/images/vsc-icon-dark.png') ?>" />
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="fs-3">Visual Studio Code</h5>
@@ -88,7 +88,7 @@
                         </div>          
                         <div class="carousel-item">
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
-                                <img width="200" src="<?= base_url('assets/images/mysql-icon.png') ?>" />
+                                <img width="200" src="<?= base_url('assets/images/mysql-icon-dark.png') ?>" />
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="fs-3">Mysql</h5>
@@ -97,7 +97,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
-                                <img width="200" src="<?= base_url('assets/images/js-icon.png') ?>" />
+                                <img width="200" src="<?= base_url('assets/images/js-icon-dark.png') ?>" />
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="fs-3">Javascript</h5>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
-                                <img width="200" src="<?= base_url('assets/images/html-icon.png') ?>" />
+                                <img width="200" src="<?= base_url('assets/images/html-icon-dark.png') ?>" />
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="fs-3">HTML</h5>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
-                                <img width="200" src="<?= base_url('assets/images/bootstrap-icon.png') ?>" />
+                                <img width="200" src="<?= base_url('assets/images/bootstrap-icon-dark.png') ?>" />
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="fs-3">Bootstrap 5</h5>
