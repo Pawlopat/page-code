@@ -22,7 +22,7 @@ body{
     background-repeat: no-repeat;
 }
 
-#top:after{
+/* #top:after{
     content: "";
     position: absolute;
     top: calc(70% - 0);
@@ -33,7 +33,7 @@ body{
     background: #212121;
     transform: skew(340deg);
     transform-origin: top;
-}
+} */
 
 .fs-4r{
     font-size: 4rem;
@@ -41,3 +41,33 @@ body{
 .fs-25r{
     font-size: 2rem;
 }
+
+/* #top:after {
+    content: "";
+    position: absolute;
+    left: -120px;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background: #212121;
+    transform: skew(301deg);
+    transform-origin: top;
+} */
+
+#about_me{
+    background: #212121;
+    color: white;
+}
+
+/* #about_me:after {
+    content: "";
+    position: absolute;
+    top: calc(70% - 0);
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: #212121;
+    transform: skew(301deg);
+    transform-origin: top;
+} */
