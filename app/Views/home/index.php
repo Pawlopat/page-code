@@ -63,7 +63,7 @@
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
                                 <img width="200" src="<?= base_url('assets/images/php-icon-dark.png') ?>" />
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="fs-3">PHP 7.4/8.1</h5>
                                 <p class="lead">For making applications back-end work (auth, data operations)</p>
                             </div>
@@ -72,7 +72,7 @@
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
                                 <img width="200" src="<?= base_url('assets/images/ci-icon-dark.png') ?>" />
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="fs-3">Codeigniter 4</h5>
                                 <p class="lead">Framework for PHP to make coding easier for me</p>
                             </div>
@@ -81,7 +81,7 @@
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
                                 <img width="200" src="<?= base_url('assets/images/vsc-icon-dark.png') ?>" />
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="fs-3">Visual Studio Code</h5>
                                 <p class="lead">Here I'm writing all of this stuff</p>
                             </div>
@@ -90,7 +90,7 @@
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
                                 <img width="200" src="<?= base_url('assets/images/mysql-icon-dark.png') ?>" />
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="fs-3">Mysql</h5>
                                 <p class="lead">Databases, queries, data operations</p>
                             </div>
@@ -99,7 +99,7 @@
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
                                 <img width="200" src="<?= base_url('assets/images/js-icon-dark.png') ?>" />
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="fs-3">Javascript</h5>
                                 <p class="lead">Some magic lines of code, to give application live</p>
                             </div>
@@ -108,7 +108,7 @@
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
                                 <img width="200" src="<?= base_url('assets/images/html-icon-dark.png') ?>" />
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="fs-3">HTML</h5>
                                 <p class="lead">Just like doing the puzzles :)</p>
                             </div>
@@ -117,7 +117,7 @@
                             <div class="w-100 d-flex justify-content-center align-items-center" style="margin-bottom: 150px">
                                 <img width="200" src="<?= base_url('assets/images/bootstrap-icon-dark.png') ?>" />
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="fs-3">Bootstrap 5</h5>
                                 <p class="lead">To make it all look nice</p>
                             </div>
@@ -136,34 +136,5 @@
             </div>
     </div>
 </section>
-<!-- <section class="main position-absolute top-50 start-50 translate-middle py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 d-flex justify-content-center align-items-center">
-                <img src="<?= base_url('assets/images/logo/logo-page-white.png') ?>" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-white text-center py-3">
-                <h1>Z pasją do programowania</h1>
-            </div>
-        </div>
-        <div class="row text-white">
-            <div class="col-md-6">
-                <h3 class="text-center w-100">Patryk Pawłowski Full Stack PHP developer</h3>
-                <p>Od 4 lat zajmuję się programowaniem aplikacji internetowych. </p>
-            </div>
-            <div class="col-md-6"></div>
-        </div>
-    </div>
-</section> -->
-<!-- <section class="second mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mt-4 text-center">
-                <h1>Z pasją do programowania</h1>
-            </div>
-        </div>
-    </div>
-</section> -->
+
 </body>
