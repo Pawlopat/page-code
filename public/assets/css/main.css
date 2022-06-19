@@ -58,6 +58,22 @@ body{
     background: #212121;
     color: white;
 }
+#contact_form{
+    background: #212121;
+    color: white;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: rgb(33 33 33);
+    border-color: #aeaeae;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(63 63 63);
+}
+.form-control {
+    background-color: #212121;
+    color: white;
+}
 
 /* #about_me:after {
     content: "";
@@ -71,3 +87,23 @@ body{
     transform: skew(301deg);
     transform-origin: top;
 } */
+
+.btn-outline-light:hover {
+    color: #fff;
+    background-color: rgb(33, 33, 33);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(63 63 63);
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff;
+    }
+  }

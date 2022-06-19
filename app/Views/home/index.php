@@ -137,4 +137,31 @@
     </div>
 </section>
 
+<section id="contact_form" class="py-5">
+    <div class="container">
+        <div class="row my-2">
+            <div class="col-md-12 text-center">
+                <h1>Contact</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <form method="POST" class="w-50" action="<?= base_url('contact_form') ?>">
+                <div class="mb-3">
+                    <label for="contact_email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="contact_email" name="contact_email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact_message" class="form-label">Message</label>
+                    <textarea class="form-control" name="contact_message" id="contact_message" rows="10" cols="5" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-outline-light w-100">Send</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
