@@ -7,12 +7,12 @@
 }
 
 @font-face {
-    font-family: "PTSansNarrow"; /*eg Ubuntu*/
-    src: url('fonts/PTSansNarrow-Regular.ttf');
+    font-family: "Montserrat"; /*eg Ubuntu*/
+    src: url('fonts/Montserrat-Light.ttf');
 }
 
 body{
-    font-family: 'PTSansNarrow'
+    font-family: 'Montserrat'
 }
 #background{
     background-color: #191919;
