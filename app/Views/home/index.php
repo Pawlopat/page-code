@@ -156,7 +156,7 @@
                     <textarea class="form-control" name="contact_message" id="contact_message" rows="10" cols="5" required></textarea>
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-outline-light w-100">Send</button>
+                    <button type="submit" class="btn btn-outline-light w-100" name="action" value="send_message">Send</button>
                 </div>
                 </form>
             </div>

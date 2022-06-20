@@ -106,4 +106,9 @@ body{
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #fff;
     }
+}
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
   }

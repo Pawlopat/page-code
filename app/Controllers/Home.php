@@ -3,6 +3,8 @@
 namespace App\Controllers;
 use CodeIgniter\Api\ResponseTrait;
 use CodeIgniter\Controller;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 class Home extends BaseController
 {
     public function index()
@@ -13,34 +15,53 @@ class Home extends BaseController
     }
 
     public function contact_form(){
-        date_default_timezone_set('Europe/Warsaw');
-        if(trim($this->request->getPost('contact_email')) != '' && trim($this->request->getPost('contact_message')) != ''){
-            $email = \Config\Services::email();
-            $config['SMTPHost'] = getenv('email.SMTPHostSSL');
-            $config['SMTPUser'] = getenv('email.SMTPUser');
-            $config['SMTPPass'] = getenv('email.SMTPPass');
-          /*   $config['protocol'] = 'smtp';
-            $config['smtp_port'] = '587';
-            $config['mailtype'] = "html";
-            $config['crlf'] = "\r\n";
-            $config['newline'] = "\r\n"; */
-            
-            echo "<pre>";
-            print_r ($config);
-            echo "</pre>";
-            
-            //$config['smtp_port '] = 'sendmail';
-            $email->initialize($config);
-            $email->setFrom('kontakt@page-code.pl', 'Pagecode');
-            $email->setTo('ppawlowski96@gmail.com');
-            $email->setSubject('Nowa wiadomość page-code.pl');
-            $email->setMessage('<h1>Nowa wiadomość page-code.pl</h1><br/><ul><li><b>E-mail: '.$this->request->getVar('contact_email').'</b></li><li><b>Message:</b> '.$this->request->getVar('contact_message').'</li></ul>');
-            if(!$email->send()){
-                echo $email->printDebugger();
-                //return redirect()->to('/email_error');
-            }else{
-                return redirect()->to('/thank_you');
+        if(trim($this->request->getPost('contact_email')) != '' && trim($this->request->getPost('contact_message')) != '' && $this->request->getPost('action') == 'send_message'){
+            $mail = new PHPMailer(true);  
+            try {
+                $mail->isSMTP();  
+                $mail->Host         = getenv('email.SMTPHostSSL');
+                $mail->SMTPAuth     = true;     
+                $mail->Username     = getenv('email.SMTPUser');  
+                $mail->Password     = getenv('email.SMTPPass');
+                $mail->SMTPSecure   = 'tls';  
+                $mail->Port         = 587;  
+                $mail->CharSet      = 'UTF-8';
+                $mail->Encoding     = 'base64';
+                $mail->Subject      = 'Nowa wiadomość page-code.pl';
+                $mail->Body         = '<h1>Nowa wiadomość page-code.pl</h1><br/><ul><li><b>E-mail: '.$this->request->getVar('contact_email').'</b></li><li><b>Message:</b> '.$this->request->getVar('contact_message').'</li></ul>';
+                $mail->isHTML(true);      
+
+                $mail->setFrom('kontakt@page-code.pl', 'Page-code');
+                $mail->addAddress('kontakt@page-code.pl');  
+                
+                if(!$mail->send()) {
+                    return redirect()->to('/email_error')->with('from_email', 1);
+                }
+                else {
+                    return redirect()->to('/thank_you')->with('from_email', 1);
+                }
+            } catch (Exception $e) {
+                return redirect()->to('/email_error')->with('from_email', 1);
             }
         }
+    }
+
+    public function email_error(){
+        if(session()->getFlashdata('from_email') == 1){
+            echo view('templates/header');
+            echo view('home/email_error');
+            echo view('templates/footer');
+        }else{
+            return redirect()->to('/');
+        }
+    }
+    public function thank_you(){
+       if(session()->getFlashdata('from_email') == 1){
+           echo view('templates/header');
+           echo view('home/thank_you');
+           echo view('templates/footer');
+       }else{
+        return redirect()->to('/');
+       }
     }
 }
