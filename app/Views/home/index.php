@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <span class="fs-4">Hello, my name is Patryk Pawłowski I am the Full Stack PHP developer, what means I can take up your Idea, and make a real, functional application of it.<br/>
+                <span class="fs-4">Hello, my name is Patryk Pawłowski. I am the Full Stack PHP developer, what means I can take up your Idea, and make a real, functional application of it.<br/>
                  I love to collaborate with people, find their needs and make their life in work, much easier.
                  If you feel that you’re doing same thing hundreds of times, and an idea popped up into your head, that you can automate this thing. <br/>
                  Maybe good move is to contact me and present your case. I think we can find a solution, to get your problem done. </span>
