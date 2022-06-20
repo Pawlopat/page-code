@@ -146,7 +146,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center align-items-center">
-                <form method="POST" class="w-50" action="<?= base_url('contact_form') ?>">
+                <form method="POST" class="w-75" action="<?= base_url('contact_form') ?>">
                 <div class="mb-3">
                     <label for="contact_email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="contact_email" name="contact_email" required>
